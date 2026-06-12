@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: #f7f2e7;
+  color: #2b2a25;
+}
+
+.corner {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #b8924a;
+  opacity: 0.55;
+}
+.corner.tl {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 6px 0 0 0;
+}
+.corner.tr {
+  top: 10px;
+  right: 10px;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0 6px 0 0;
+}
+.corner.bl {
+  bottom: 10px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+  border-radius: 0 0 0 6px;
+}
+.corner.br {
+  bottom: 10px;
+  right: 10px;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 6px 0;
+}
